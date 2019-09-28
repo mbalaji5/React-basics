@@ -10,6 +10,7 @@ import UsingExpression from './function/usingExpression';
 import { UsingExpressionInClass } from './class/usingExpressInClass';
 import { NumberList, GetListItem } from './function/renderinglist';
 import GetTheListItem from './function/renderinglist';
+import { ReactForms } from './class/reactForms';
 
 
 // function App() {
@@ -42,7 +43,7 @@ function App()
 {
   const numbers=[1,2,3,4,5,6]
   return (<div>
-    <Classclock></Classclock> <br /> 
+    {/* <Classclock></Classclock> <br /> 
     <Buttonclick> </Buttonclick><br></br> 
     <ButtonClickFromClass></ButtonClickFromClass> 
     <div><label>Expression using Function</label></div>
@@ -61,7 +62,10 @@ function App()
     <div>
       
       <GetListItem  numbers={numbers}> </GetListItem>
-    </div>
+    </div> */}
+
+    <div>Welcome to React form control</div>
+    <ReactForms></ReactForms>
     
     </div>)
  // return (<div><Welcome name="Balaji"></Welcome><br></br><Welcome name="sathish"></Welcome></div>);

@@ -8,6 +8,9 @@ import Buttonclick from './function/event/clickEvent';
 import { ButtonClickFromClass } from './class/buttonclick';
 import UsingExpression from './function/usingExpression';
 import { UsingExpressionInClass } from './class/usingExpressInClass';
+import { NumberList, GetListItem } from './function/renderinglist';
+import GetTheListItem from './function/renderinglist';
+
 
 // function App() {
 //   return (
@@ -37,6 +40,7 @@ function Welcome(props){
 }
 function App()
 {
+  const numbers=[1,2,3,4,5,6]
   return (<div>
     <Classclock></Classclock> <br /> 
     <Buttonclick> </Buttonclick><br></br> 
@@ -48,6 +52,17 @@ function App()
     <div><label>Expression using class</label></div>
     <UsingExpressionInClass name={'Kabi'} isLogedIn={true}></UsingExpressionInClass>
     <UsingExpressionInClass name={'Barani'} isLogedIn={false}></UsingExpressionInClass>
+
+    <div>Rendering Multiple Component</div>
+    <ul><GetTheListItem numbers={numbers}></GetTheListItem></ul>
+
+    <NumberList numbers={numbers}></NumberList>
+
+    <div>
+      
+      <GetListItem  numbers={numbers}> </GetListItem>
+    </div>
+    
     </div>)
  // return (<div><Welcome name="Balaji"></Welcome><br></br><Welcome name="sathish"></Welcome></div>);
 }
